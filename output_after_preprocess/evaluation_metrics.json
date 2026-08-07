@@ -1,0 +1,107 @@
+{
+  "split_mode": "temporal_within_day",
+  "test_samples": 602777,
+  "positive_class": "DoS/DDoS",
+  "test_benign": 408272,
+  "test_attack": 194505,
+  "roc_auc": 0.9984571160317439,
+  "pr_auc": 0.9984340278513799,
+  "threshold_default": {
+    "threshold": 0.5,
+    "accuracy": 0.990815840684034,
+    "precision": 0.975942091768629,
+    "recall": 0.9960926454332794,
+    "f1": 0.9859144178756623,
+    "false_positive_rate": 0.01169808363052083,
+    "true_negative": 403496,
+    "false_positive": 4776,
+    "false_negative": 760,
+    "true_positive": 193745
+  },
+  "threshold_tuned_on_validation": {
+    "threshold": 0.7904094457626343,
+    "accuracy": 0.9921845060445239,
+    "precision": 0.9880578899186373,
+    "recall": 0.9877175393948742,
+    "f1": 0.9878876853420682,
+    "false_positive_rate": 0.00568738488066779,
+    "true_negative": 405950,
+    "false_positive": 2322,
+    "false_negative": 2389,
+    "true_positive": 192116
+  },
+  "per_attack_type": [
+    {
+      "Loại": "Benign",
+      "Vai trò": "Lưu lượng bình thường",
+      "Số mẫu": 408272,
+      "Phân loại đúng": 403496,
+      "Phân loại sai": 4776,
+      "Tỷ lệ đúng": 0.9883019163694792,
+      "Ý nghĩa": "Specificity - phân loại sai nghĩa là cảnh báo nhầm"
+    },
+    {
+      "Loại": "DDOS attack-HOIC",
+      "Vai trò": "Tấn công",
+      "Số mẫu": 39772,
+      "Phân loại đúng": 39448,
+      "Phân loại sai": 324,
+      "Tỷ lệ đúng": 0.9918535653223374,
+      "Ý nghĩa": "Recall - phân loại sai nghĩa là bỏ sót tấn công"
+    },
+    {
+      "Loại": "DDOS attack-LOIC-UDP",
+      "Vai trò": "Tấn công",
+      "Số mẫu": 346,
+      "Phân loại đúng": 335,
+      "Phân loại sai": 11,
+      "Tỷ lệ đúng": 0.9682080924855492,
+      "Ý nghĩa": "Recall - phân loại sai nghĩa là bỏ sót tấn công"
+    },
+    {
+      "Loại": "DDoS attacks-LOIC-HTTP",
+      "Vai trò": "Tấn công",
+      "Số mẫu": 115073,
+      "Phân loại đúng": 115069,
+      "Phân loại sai": 4,
+      "Tỷ lệ đúng": 0.9999652394566927,
+      "Ý nghĩa": "Recall - phân loại sai nghĩa là bỏ sót tấn công"
+    },
+    {
+      "Loại": "DoS attacks-GoldenEye",
+      "Vai trò": "Tấn công",
+      "Số mẫu": 8281,
+      "Phân loại đúng": 8277,
+      "Phân loại sai": 4,
+      "Tỷ lệ đúng": 0.9995169665499336,
+      "Ý nghĩa": "Recall - phân loại sai nghĩa là bỏ sót tấn công"
+    },
+    {
+      "Loại": "DoS attacks-Hulk",
+      "Vai trò": "Tấn công",
+      "Số mẫu": 29040,
+      "Phân loại đúng": 29040,
+      "Phân loại sai": 0,
+      "Tỷ lệ đúng": 1.0,
+      "Ý nghĩa": "Recall - phân loại sai nghĩa là bỏ sót tấn công"
+    },
+    {
+      "Loại": "DoS attacks-SlowHTTPTest",
+      "Vai trò": "Tấn công",
+      "Số mẫu": 11,
+      "Phân loại đúng": 11,
+      "Phân loại sai": 0,
+      "Tỷ lệ đúng": 1.0,
+      "Ý nghĩa": "Recall - phân loại sai nghĩa là bỏ sót tấn công"
+    },
+    {
+      "Loại": "DoS attacks-Slowloris",
+      "Vai trò": "Tấn công",
+      "Số mẫu": 1982,
+      "Phân loại đúng": 1565,
+      "Phân loại sai": 417,
+      "Tỷ lệ đúng": 0.7896064581231079,
+      "Ý nghĩa": "Recall - phân loại sai nghĩa là bỏ sót tấn công"
+    }
+  ]
+}
